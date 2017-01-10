@@ -1,27 +1,19 @@
-def inputs
-
+continue = true
     quantity = 0
     price = 0
     selection = 0
 
-    puts"enter price"
+while continue ==true
+	puts"enter price"
     price = gets.chomp
 
     puts "Enter a quantity"
     quantity =gets.chomp
-    
-    price = price.to_i
-    quantity = quantity.to_i
-        
-    if quantity != 0
-        selection = price.to_i * quantity.to_i
-     
-    end 
 
-end
-quantity= -1
+     selection = price.to_f * quantity.to_f
 
-while quantity !=0 do
-    inputs
-    puts "Quantity = #{quantity} price = #{price} subtotal = #{selection}"
+     puts "Quantity = #{quantity} price = #{price} subtotal = #{selection}"
+    if quantity.to_i == 0
+    	break
     end
+ end
