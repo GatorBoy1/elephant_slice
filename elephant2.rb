@@ -12,7 +12,7 @@ def discount(grand_total)
 				discount_rate = 0.05
 			elsif grand_total >=7000 && grand_total<= 9999
 				discount_rate = 0.1
-			else grand_total >= 1000 && grand_total<= 50000
+			else grand_total >= 10000 && grand_total<= 50000
 				discount_rate = 0.12
 			end #nested if
 

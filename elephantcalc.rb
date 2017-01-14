@@ -49,7 +49,7 @@ puts tax_code
 				discount = 0.05
 			elsif grand_total >=7000 && grand_total<= 9999
 				discount = 0.1
-			else grand_total >= 1000 && grand_total<= 50000
+			else grand_total >= 10000 && grand_total<= 50000
 				discount = 0.12
 			end
 
