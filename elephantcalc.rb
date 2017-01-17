@@ -21,7 +21,8 @@ while continue ==true
 #can be used as a function
      
     if quantity.to_f == 0
-    	break
+    	#break
+		continue = false
     end
     grand_total = grand_total + subtotal
 	puts "Quantity = #{quantity} price = #{price} subtotal = #{subtotal}		grand total #{grand_total}"

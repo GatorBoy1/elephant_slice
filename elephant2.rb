@@ -60,7 +60,8 @@ while continue ==true
     #subtotal_calc(price, quantity)
      
     if quantity.to_f == 0
-    	break
+    	#break
+		continue = false
     end
     subtotal =subtotal_calc(price, quantity)
     grand_total = grand_total + subtotal
